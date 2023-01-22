@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/lock-solid.svg">
+    <script src="https://kit.fontawesome.com/957c5db694.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Codificador De Mensagem</title>
+</head>
+
+<body>
+    <header>
+        <h1>Criptografador De Mensagens</h1>
+    </header>
+
+    <main>
+        <form class="principal" name="formulario">
+            <label for="qualPadrao">Selecione o Algoritimo de Codificação</label>
+            <!-- campo para selecionar o algorimo de codificação  -->
+            <select id="escolhas">
+                <option selected disabled>Selecione Aqui!</option>
+                <option value="cesar" id="cesar">Cifra de Cesar</option>
+                <option value="base64" id="base64">Base 64</option>
+            </select>
+
+            <!-- campo que so aparece se selecionado cesar  -->
+            <div class="incremento" id="numero">
+                <p>Adicione o Deslocamento</p>
+                <input id="numeroIncremento" type="number" default="0" min="1" max="25" value="1" />
+            </div>
+            <div class="bttns">
+                <input type="radio" name="botoes" id="codificar" value="codificar" checked="checked" />
+                <label>CODIFICAR</label>
+                <input type="radio" name="botoes" id="decodificar" value="decodificar" />
+                <label>DECODIFICAR</label>
+            </div>
+            <!-- campo da mensagem do usuario para codificar ou decodificar  -->
+            <div id="campoMensagem">
+                <label>Digite Abaixo Sua Mensagem:</label>
+                <textarea type="text" placeholder="Digite sua mensagem aqui" autocomplete="off" id="texto"></textarea>
+            </div>
+            <!-- botoes do site  -->
+            <div class="bttns">
+                <button type="submit" id="enviar">Codificar Mensagem</button>
+            </div>
+
+            <label>Resultado aparecerá logo abaixo:</label>
+
+            <textarea type="text" id="resultadoFinal" readonly></textarea>
+        </form>
+
+        <section>
+            <div class="icones">
+                <h2>Minhas Redes</h2>
+
+                <a href="https://www.linkedin.com/in/gabrielpiovesani/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/GabrielPiovesani" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Todos Os Direitos Reservados: Gabriel Piovesani Possidonio
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

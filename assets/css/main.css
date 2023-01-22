@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Poppins&family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/img/background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(115, 133, 144);
+  justify-content: center;
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 100px;
+  border: black 2px solid;
+  width: 400px;
+  background-color: rgb(115, 133, 144);
+}
+
+.incremento {
+  display: none;
+  width: 287.08px;
+}
+.incremento input {
+  width: 40px;
+}
+
+.bttns {
+  display: flex;
+  width: 287.08px;
+  margin-top: 10px;
+}
+.bttns input {
+  margin-left: 10px;
+}
+
+#escolhas {
+  width: 287.08px;
+}
+
+#campoMensagem {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 287.08px;
+}
+
+#texto {
+  margin-top: 10px;
+  resize: none;
+  border: 2px solid;
+  height: 200px;
+}
+
+#resultadoFinal {
+  resize: none;
+  width: 287.08px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.icones a {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  background-color: rgb(115, 133, 144);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+h2 {
+  margin-top: 100px;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 769px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  .icones a {
+    color: white;
+  }
+
+  .icones {
+    color: white;
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 10px;
+    margin-top: 100px;
+  }
+}
+/*  para abaixo de 588 px */
+@media (max-width: 588px) {
+  h1 {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  .icones {
+    font-size: 20px;
+    color: white;
+  }
+
+  .icones a {
+    color: white;
+  }
+
+  .principal {
+    width: 290px;
+  }
+
+  .incremento {
+    display: none;
+    width: 143.5px;
+  }
+  .incremento input {
+    width: 20px;
+  }
+
+  #texto {
+    height: 100px;
+  }
+
+  #resultadoFinal,
+  #campoMensagem {
+    height: 100px;
+  }
+
+  .bttns,
+  #resultadoFinal,
+  #campoMensagem,
+  #escolhas .incremento {
+    width: 143.5;
+  }
+}
