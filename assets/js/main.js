@@ -68,7 +68,7 @@ addEventListener("submit",(e)=> {
   }
     
   
-  else { alert('voce nao selecionou ne ')}
+  else { alert('por favor selecione o algoritimo de codificação ')}
 
   var resultadoTexto = document.querySelector("#resultadoFinal");
   resultadoTexto.innerHTML = `${resultadoFinal}`;
